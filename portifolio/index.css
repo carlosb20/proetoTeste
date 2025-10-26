@@ -5,14 +5,13 @@ body{
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #0e0e0e;
-    color: white;
     overflow-x: hidden; 
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    
 }
 
 .nav01 {
@@ -98,18 +97,18 @@ body{
 }
 
 .imagem{
-    display: flex;
-    justify-content: center;
-    height:50vh;
-    align-items: center;  
+    
+    height:75vh;
+    align-items: center;
+    margin: 0;  
 }
 
 .imagem img{
 
-    width:300px;
-    height:300px;
-    border-radius: 50%; 
-    background-color: rgb(14, 87, 223); padding: 20px; 
+    width:370px;
+    height:370px;
+    border-radius: 15em; 
+    background-color: rgb(14, 87, 223); 
     border: 5px solid rgb(197, 187, 187);
     animation: exemplo 0.5s ease-in-out infinite alternate;
     
@@ -183,3 +182,17 @@ body{
     from {transform: translateY(2px)}
     to {transform: translateY(-2px)}
   }
+
+@media (max-width: 370px) {
+    
+   .texto h1{
+        font-size: 22px;
+        margin-top: 5px;
+   } 
+    
+   .imagem img{
+        width: 250px;
+        height: 250px;
+       border-radius: 15em;
+   }
+}
