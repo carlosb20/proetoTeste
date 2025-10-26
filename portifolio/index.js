@@ -1,5 +1,6 @@
 const play = document.querySelector('.play');
 const pm4 = document.querySelector('.pm4');
+const pm42 = document.querySelector('.pm4-2');
 
 pm4.addEventListener('click', () => {
     console.log('clicou');
@@ -29,6 +30,11 @@ pm4.addEventListener('click', () => {
     }
 });
 
+
+pm42.addEventListener('click', () => {
+    console.log('clicou no 2');
+
+});
 
 
 const lick = document.querySelectorAll('.ul01 li a.link');
